@@ -232,7 +232,7 @@ def main():
         st.session_state.result = str(arctan_num)
         st.session_state.number = str(arctan_num)
 
-    elif " !" in st.session_state.number:
+    elif " ! " in st.session_state.number:
         n = st.session_state.number.split()
         n.remove("!")
         num = 0
@@ -284,7 +284,7 @@ for row in numbers:
                 elif button == "Del":
                     st.session_state.number = st.session_state.number[:-1]
                 elif button == "x!":
-                    st.session_state.number += " !"
+                    st.session_state.number += " ! "
                 elif button == "π":
                     st.session_state.number += " π "
                 elif button == "log":
